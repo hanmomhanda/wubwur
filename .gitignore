@@ -1,0 +1,7 @@
+build/
+gradle/
+gradlew*
+out/
+.gradle/
+.idea/
+wubwur.iml
