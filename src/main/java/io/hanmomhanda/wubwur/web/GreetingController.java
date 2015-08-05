@@ -12,7 +12,7 @@ public class GreetingController {
     public ModelAndView greeting(@RequestParam(value="name", required=false, defaultValue="Thymeleaf") String name, ModelAndView mv) {
         mv.setViewName("greeting");
         mv.addObject("name", name);
-        mv.addObject("hot", "Hot Swapping!!");
+        mv.addObject("hot", "Not Swapping!!");
         return mv;
     }
 }
