@@ -10,7 +10,7 @@ public class GreetingController {
 
     @RequestMapping("/greeting")
     public ModelAndView greeting(@RequestParam(value="name", required=false, defaultValue="Thymeleaf") String name, ModelAndView mv) {
-        mv.setViewName("greeting");
+        mv.setViewName("greeting-view");
         mv.addObject("name", name);
         mv.addObject("hot", "Not Swapping!!");
         return mv;
